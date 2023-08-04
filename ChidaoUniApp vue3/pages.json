@@ -1,0 +1,222 @@
+{
+	"pages": [{
+		"path": "pages/home/index/index",
+		"style": {
+			// #ifdef H5
+			"titleNView": false,
+			// #endif
+			"navigationBarTitleText": "赤道",
+			"enablePullDownRefresh": false,
+			"mp-weixin": {
+				"disableScroll": true
+			},
+			"app-plus": {
+				"titleNView": {
+					"type": "transparent",
+					"searchInput": {
+						"backgroundColor": "rgba(231, 231, 231,.7)",
+						"borderRadius": "16px",
+						"placeholder": "请地址:",
+						"disabled": true,
+						"placeholderColor": "#606266"
+						
+					},
+					"buttons": [{
+							"fontSrc": "/static/yticon.ttf",
+							"text": "\ue60d",
+							"fontSize": "26",
+							"color": "#303133",
+							"float": "left",
+							"background": "rgba(0,0,0,0)"
+						},
+						{
+							"fontSrc": "/static/yticon.ttf",
+							"text": "\ue744",
+							"fontSize": "27",
+							"color": "#303133",
+							"background": "rgba(0,0,0,0)",
+							"redDot": true
+						}
+					]
+				}
+			},
+			"mp-alipay": {
+				"allowsBounceVertical": "NO"
+			},
+			"mp-baidu": {
+				"disableScroll": true
+			}
+		}
+
+	},
+		
+		{
+			"path": "pages/user/index/index",
+			"style": {
+				// "navigationBarTitleText": "我的",
+				// #ifdef MP
+				// "navigationStyle": "custom"
+				// #endif
+				"app-plus": {
+					"bounce": "none",
+					"titleNView": {
+						"type": "transparent",
+						// "buttons": [{
+						// 		"fontSrc": "/static/yticon.ttf",
+						// 		"text": "\ue60f",
+						// 		"fontSize": "24",
+						// 		"color": "#303133",
+						// 		"width": "46px",
+						// 		"background": "rgba(0,0,0,0)"
+						// 	},
+						// 	{
+						// 		"fontSrc": "/static/yticon.ttf",
+						// 		"text": "\ue744",
+						// 		"fontSize": "28",
+						// 		"color": "#303133",
+						// 		"background": "rgba(0,0,0,0)",
+						// 		"redDot": true
+						// 	}
+						// ]
+					}
+				}
+			}
+		},
+		{
+		    "path" : "pages/home/citylist/citylist",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "起始地",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		},
+		{
+		    "path" : "pages/home/billingWeight/billingWeight",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "计费重",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		},
+		{
+		    "path" : "pages/quotation/index/index",
+			"style":												
+		    {
+		        "navigationBarTitleText": "精准报价",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		},
+		{
+		    "path" : "pages/routeScheme/index/index",
+			"style":												
+		    {
+		        "navigationBarTitleText": "查价结果",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+	    ,{
+            "path" : "pages/submitOrder/index/index",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "立即订购",
+                "enablePullDownRefresh": false
+            }
+            
+        },
+		{
+		    "path" : "pages/submitOrder/increaseBox/index",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "箱号",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		},
+		{
+		    "path" : "pages/submitOrder/productDetail/index",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "产品信息",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		},
+		{
+		    "path" : "pages/submitOrder/selectProduct/index",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "选择产品",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+        ,{
+            "path" : "pages/submitOrder/recieveAddress/index/index",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "收货地址簿",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/submitOrder/sendAddress/index/index",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "发货地址簿",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/submitOrder/sendAddress/contacts/contacts",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "新增地址",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#f8f8f8"
+	},
+	"tabBar": {
+		"color": "#C0C4CC",
+		"selectedColor": "#0055ff",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/home/index/index",
+				"iconPath": "static/search-price.png",
+				"selectedIconPath": "static/search-price-current.png",
+				"text": "查价"
+			},
+			{
+				"pagePath": "pages/home/index/index",
+				"iconPath": "static/tab-cate.png",
+				"selectedIconPath": "static/tab-cate-current.png",
+				"text": "分类"
+			},
+			{
+				"pagePath": "pages/home/index/index",
+				"iconPath": "static/order.png",
+				"selectedIconPath": "static/order-current.png",
+				"text": "订单"
+			},
+			{
+				"pagePath": "pages/user/index/index",
+				"iconPath": "static/tab-my.png",
+				"selectedIconPath": "static/tab-my-current.png",
+				"text": "我的"
+			}
+		]
+	}
+}

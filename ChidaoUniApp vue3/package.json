@@ -1,0 +1,29 @@
+{
+	"uni-app": {
+		"scripts": {
+			"mp-dingtalk": {
+				"title": "钉钉小程序",
+				"env": {
+					"UNI_PLATFORM": "mp-alipay"
+				},
+				"define": {
+					"MP-DINGTALK": true
+				}
+			}
+		}
+	},
+	"dependencies": {
+		"@dcloudio/uni-mp-vue": "^2.0.2-3080720230703001",
+		"@element-plus/icons": "^0.0.11",
+		"@element-plus/icons-vue": "^2.1.0",
+		"ant-design-vue": "^3.2.20",
+		"axios": "^1.4.0",
+		"element-plus": "^2.3.7",
+		"lodash": "^4.17.21",
+		"moment": "^2.29.4",
+		"pinia": "^2.1.4",
+		"pinia-plugin-persist-uni": "^1.2.0",
+		"qs": "^6.11.2",
+		"vue": "^3.0.5"
+	}
+}
